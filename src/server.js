@@ -1,6 +1,6 @@
-const express = require('express');
+require('dotenv');
 const app = require('./app');
-const { PORT } = require('./config');
+const {PORT} = require('./config');
 
 // Catch-all 404
 app.use(function (req, res, next) {
@@ -21,5 +21,5 @@ app.use(function (err, req, res, next) {
 });
 
 app.listen(PORT, () => {
-  console.log('Serving on 8080');
+  console.log(`Serving on ${PORT}`);
 });

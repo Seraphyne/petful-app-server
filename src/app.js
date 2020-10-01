@@ -21,8 +21,17 @@ const app = express();
 
 // console.log('client origin is', CLIENT_ORIGIN);
 app.use(cors({
-  origin: CLIENT_ORIGIN
+  'allowedHeaders': ['sessionId', 'Content-Type'],
+  'exposedHeaders': ['sessionId'],
+  'origin': '*',
+  'methods': 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  'preflightContinue': false
 }));
+
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  next();
+});
 
 const morganSetting = process.env.NODE_ENV === 'production' ? 'tiny' : 'common';
 app.use(morgan(morganSetting));
@@ -77,7 +86,7 @@ function adoptionLoopTick() {
   let promiseLoop = new Promise((resolve) => {
 
     let replyToClients = (adoptedPet) => {
-      console.log("Reply to clients", listOfClients.size);
+      // console.log("Reply to clients", listOfClients.size);
       let currentHuman = humansRouter.getService().deleteHuman();
 
       // if there's no adopted pet and it's a dummy user, assign a random pet
