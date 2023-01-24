@@ -1,6 +1,5 @@
-const express = require('express');
-const CatsService = require('./cats-service');
-
+const express = require("express");
+const CatsService = require("./cats-service");
 
 class CatsRouter {
   constructor() {
@@ -9,22 +8,18 @@ class CatsRouter {
     this.jsonParser = express.json();
 
     this.catsRouter
-      .route('/')
-      .get((req, res, next) => {
+      .route("/")
+      .get((req, res) => {
         const allCats = this.catsService.getCats();
         // console.log('getting cats', allCats);
-        return res
-          .json(allCats);
+        return res.json(allCats);
       })
-      .delete((req, res, next) => {
-
+      .delete((req, res) => {
         let deletedCat = null;
         if (this.adoptionCallback) {
           deletedCat = this.adoptionCallback();
         }
-        return res
-          .status(200)
-          .send(JSON.stringify(deletedCat));
+        return res.status(200).send(JSON.stringify(deletedCat));
       });
     // .post(jsonParser, (req, res, next) => {
     //   const { imageURL, imageDescription, name, sex, age, breed, story } = req.body;
@@ -33,7 +28,6 @@ class CatsRouter {
     //   return res
     //     .status(201)
     //     .json(serializeCat())
-
 
     // })
   }
@@ -49,7 +43,6 @@ class CatsRouter {
   listenForAdoption(cb) {
     this.adoptionCallback = cb;
   }
-
 }
 
 module.exports = CatsRouter;

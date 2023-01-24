@@ -1,5 +1,4 @@
-const Queue = require('../queues/queue-constructor');
-
+const Queue = require("../queues/queue-constructor");
 
 class HumansService {
   constructor() {
@@ -52,7 +51,6 @@ class HumansService {
       },
     ];
 
-
     humans.map((human) => {
       this.humanQueue.enqueue(human);
     });
@@ -64,7 +62,7 @@ class HumansService {
 
   postHuman(newHuman) {
     this.humanQueue.enqueue(newHuman);
-    return this.humanQueue.display().map(human => {
+    return this.humanQueue.display().map((human) => {
       return human.name;
     });
   }

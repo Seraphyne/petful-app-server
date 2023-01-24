@@ -1,7 +1,6 @@
 const express = require('express');
 const DogsService = require('./dogs-service');
 
-
 class DogsRouter {
   constructor() {
     this.dogsService = new DogsService();
@@ -12,17 +11,14 @@ class DogsRouter {
       .route('/')
       .get((req, res) => {
         const allDogs = this.dogsService.getDogs();
-        return res
-          .json(allDogs);
+        return res.json(allDogs);
       })
-      .delete((req, res, next) => {
+      .delete((req, res) => {
         let deletedDog = null;
         if (this.adoptionCallback) {
           deletedDog = this.adoptionCallback();
         }
-        return res
-          .status(200)
-          .send(JSON.stringify(deletedDog));
+        return res.status(200).send(JSON.stringify(deletedDog));
       });
     // .post(jsonParser, (req, res, next) => {
     //   const { imageURL, imageDescription, name, sex, age, breed, story } = req.body;
@@ -31,7 +27,6 @@ class DogsRouter {
     //   return res
     //     .status(201)
     //     .json(serializeCat())
-
 
     // })
   }
