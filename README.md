@@ -1,4 +1,5 @@
-# Petful App 
+# Petful App
+
 By Renata D.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7ffaccd0-2860-460d-b1c9-c334d37bcb37/deploy-status)](https://app.netlify.com/sites/petful-adoption/deploys)
@@ -7,22 +8,21 @@ By Renata D.
 
 Petful operates on a FIFO (first-in, first-out) basis. Given a queue of dogs and a queue of cats, users adopt the first available pet. As a new adopter, add your name to the waiting list and watch as each available pet gets adopted. When it's your turn to adopt your pet, click the adopt button to dequeue that pet and complete the adoption process!
 
-
 ## 📌🔗 Links:
 
-* Live: [Petful Live App](https://petful-adoption.netlify.app/)
-* Railway: [API](https://web-production-bd73.up.railway.app/)
-* Petful Client: [Github](https://github.com/Seraphyne/petful-app-client)
-* Petful Server: [Github](https://github.com/Seraphyne/petful-app-server)
+- Live: [Petful Live App](https://petful-adoption.netlify.app/)
+- Railway: [API](web-production-bd73.up.railway.app)
+- Petful Client: [Github](https://github.com/Seraphyne/petful-app-client)
+- Petful Server: [Github](https://github.com/Seraphyne/petful-app-server)
 
 ## 📌💻 Technology Used
 
-#### Front-End: 
+#### Front-End:
 
 ![](https://img.shields.io/badge/Code-CSS-informational?style=flat&logo=css&logoColor=white&color=sucess)
 ![](https://img.shields.io/badge/Code-React-informational?style=flat&logo=react&logoColor=white&color=sucess)
 
-#### Back-End: 
+#### Back-End:
 
 ![](https://img.shields.io/badge/Code-Node-informational?style=flat&logo=node&logoColor=white&color=sucess)
 ![](https://img.shields.io/badge/Code-Express-informational?style=flat&logo=express&logoColor=white&color=sucess)
