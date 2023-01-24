@@ -10,8 +10,8 @@
     "test": "mocha --require test/setup.js",
     "start": "nodemon src/server.js",
     "dev": "nodemon src/server.js",
-    "predeploy": "npm audit",
-    "deploy": "git push heroku master"
+    "predeploy": "npm audit"
+    //"deploy": "git push heroku master"
   },
   "dependencies": {
     "compression": "^1.7.4",
