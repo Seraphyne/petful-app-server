@@ -7,28 +7,48 @@ class HumansService {
 
     let humans = [
       {
-        name: 'Sarah',
-        ip: null
+        name: "Sarah",
+        ip: null,
       },
       {
-        name: 'Liz',
-        ip: null
+        name: "Liz",
+        ip: null,
       },
       {
-        name: 'Jennifer',
-        ip: null
+        name: "Jennifer",
+        ip: null,
       },
       {
-        name: 'Shannon',
-        ip: null
+        name: "Shannon",
+        ip: null,
       },
       {
-        name: 'Shay',
-        ip: null
+        name: "Shay",
+        ip: null,
       },
       {
-        name: 'Ashley',
-        ip: null
+        name: "Ashley",
+        ip: null,
+      },
+      {
+        name: "Rock",
+        ip: null,
+      },
+      {
+        name: "John",
+        ip: null,
+      },
+      {
+        name: "Paul",
+        ip: null,
+      },
+      {
+        name: "George",
+        ip: null,
+      },
+      {
+        name: "Ringo",
+        ip: null,
       },
     ];
 

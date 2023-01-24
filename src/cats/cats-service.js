@@ -43,7 +43,7 @@ class CatsService {
         sex: 'Female',
         imageURL:'https://images.pexels.com/photos/57416/cat-sweet-kitty-animals-57416.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500', 
         name: 'Garry',
-        story: 'Struggling with student loans'
+        story: 'Struggling - student loans'
       },
       {
         age: 2,

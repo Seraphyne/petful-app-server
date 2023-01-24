@@ -11,7 +11,7 @@ Petful operates on a FIFO (first-in, first-out) basis. Given a queue of dogs and
 ## 📌🔗 Links:
 
 * Live: [Petful Live App](https://petful-adoption.netlify.app/)
-* Heroku: [API](https://dsa-petful-renata.herokuapp.com/)
+* Railway: [API](https://web-production-bd73.up.railway.app/)
 * Petful Client: [Github](https://github.com/Seraphyne/petful-app-client)
 * Petful Server: [Github](https://github.com/Seraphyne/petful-app-server)
 
@@ -29,7 +29,7 @@ Petful operates on a FIFO (first-in, first-out) basis. Given a queue of dogs and
 
 #### Deployment:
 
-![](https://img.shields.io/badge/Heroku-informational?style=flat&logo=heroku&logoColor=white&color=sucess)
+![](https://img.shields.io/badge/Railway-informational?style=flat&logo=railway&logoColor=white&color=sucess)
 ![](https://img.shields.io/badge/Netlify-informational?style=flat&logo=netlify&logoColor=white&color=sucess)
 
 ## 📌📄 API Documentation
